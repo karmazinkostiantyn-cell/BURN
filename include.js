@@ -12,8 +12,8 @@ function addActivePage() {
 
     const href = link.getAttribute("href");
     
-    console.log("Current, href: ", "/docs/"+current, href);
-    if (href === "/docs/" + current || (current === "" && href === "index.html")) {
+    console.log("Current, href: ", "/BURN/"+current, href);
+    if (href === "/BURN/" + current || (current === "" && href === "index.html")) {
       div.classList.add("active-page"); // add class to the div
       break; // stop after the first match
     }
