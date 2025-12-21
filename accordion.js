@@ -2,7 +2,6 @@ var acc = document.getElementsByClassName("accordion");
 
 //runs once on page start and adds 1 event listener to each button
 for (let i = 0; i < acc.length; i++) {
-  const anchor = acc[i].getBoundingClientRect();
   acc[i].addEventListener("click", function() { //the function actually does the heavylifting
     
     //close all the other accordions
@@ -20,9 +19,6 @@ for (let i = 0; i < acc.length; i++) {
 
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-      let bd = document.body.getBoundingClientRect();
-
-      window.scrollTo(0, anchor.y);
       
     } 
   });
