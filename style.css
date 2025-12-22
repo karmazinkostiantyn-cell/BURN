@@ -231,28 +231,31 @@ nav img {
 
 .intro-wrap {
      display: flex;
-    height: 70vh;
-    
+    height: fit-content;
+    padding: 15vh 0 25vh;
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(./imgs/BackGround_index.jpg);
-    background-position: center;
+    background-position: 50% 63%;
     background-size: cover;
 
     flex-direction: column;
     text-align: center;
 
     @media(width <= 60rem) {
-    height: 50vh;
+        background-position: 50% 43%;
+        padding: 7vh 0 16vh;
     }
 }
 
 .intro {
     margin: auto;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, 1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .intro h1 {
     font-size: 4rem;
     @media (width <= 60rem) {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
     }
 
     font-weight: normal;
@@ -262,6 +265,10 @@ nav img {
 .intro h3, input{
     font-size: 1.2rem;
     color: white;
+    @media (width <= 60rem) {
+    margin: 5vw;
+        font-size: 1.2rem;
+    }
 }
 
 .intro input {
@@ -305,7 +312,7 @@ nav img {
         width: auto;
         margin-left: 5vw;
         margin-right: 5vw;
-        margin-top: -2rem;
+        margin-top: -10vh;
         grid-template-columns: 1fr;
 
     }
@@ -638,13 +645,20 @@ footer p {
 
 /*#region simple*/ /*:devil_emoji:*/
 .intro-simple {
+     text-shadow: -1px -1px 0 black, 1px -1px 0 black, 1px 1px 0 black,
+    1px 1px 0 black;
     display: flex;
     justify-content: center;
-    height: 30vh;
+    height: fit-content;
+    padding: 15vh 0;
+    
     
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(./imgs/BackGround.jpg);
     background-position: 50% 53%;
     background-size: cover;
+    @media(width <= 60rem) {
+        padding: 7vh 0;
+    }
 
 }
 
