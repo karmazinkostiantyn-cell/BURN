@@ -818,6 +818,24 @@ footer p {
     }
 }
 
+.news-row2 {
+    width: 80vw;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media(width <= 80rem)
+    {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.5rem;
+    }
+
+    @media(width <= 45rem)
+    {
+        width: 90vw;
+        grid-template-columns: 1fr;
+    }
+}
+
 .row2 .card {
     text-align: center;
     grid-template-rows: 1fr auto auto auto;
