@@ -271,13 +271,18 @@ nav img {
     }
 }
 
-.intro input {
+form {
+    margin: auto;
+}
+
+input {
     background-color: var(--primary-color);
     border: none;
     border-radius: 2rem;
     cursor: pointer;
 
     padding: 0.8rem 1.5rem;
+    
     margin-top: 1rem;
 
     transition: 0.3s;
